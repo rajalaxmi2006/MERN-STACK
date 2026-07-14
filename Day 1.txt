@@ -1,0 +1,12 @@
+Day 1
+---------
+
+software : set of instruction or programs that tell a computer what to do and how to do. its the logical part of computer system -cant touch,but it makes the machine actually useful.
+
+types - system (windows,linux,macOS)
+	 - application (chrome,facebook,whatsapp)
+	 - programming 
+
+anydesk : application software (use for remote work)
+
+	      
