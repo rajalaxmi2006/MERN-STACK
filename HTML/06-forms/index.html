@@ -1,18 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>06-FORM</title>
-</head>
-<body>
-
-    <h1>HTML form</h1>
+  </head>
+  <body>
+    <!-- <h1>HTML form</h1>
     <form action="./submit.html">
-        <input type="text" placeholder="Enter Your Name">
-        <input type="submit" value="Submit">
-        <!-- <button>Submit</button> -->
-    </form>
-</body>
+      <input type="text" placeholder="Enter Your Name" />
+      <input type="submit" value="Submit" />
+      // <button>Submit</button>
+    </form> -->
 
+    <!-- Student Form  -->
+
+    <h2>Student Form</h2>
+    <form action="" border="2px solid">
+      <label for="name"
+        >Name :
+        <input type="text" id="name" placeholder="Enter Your Name" />
+      </label>
+      <br>
+      <label for="email"
+        >Email :
+        <input type="text" id="email" placeholder="Enter Your Email" />
+      </label>
+      <br>
+      <label for="password"
+        >Password :
+        <input type="password" id="password" placeholder="Enter Your Password" />
+      </label>
+      <br>
+      <label for="dob"
+        >DOB :
+        <input type="date" id="dob" placeholder="Enter Your DOB" />
+      </label>
+      <br>
+      <label for="course"
+        >Course :
+        <select name="course" id="course">
+            <option value="mern">MERN STACK</option>
+            <option value="ai">AI/ML</option>
+            <option value="dsa">DSA</option>
+            <option value="dbms">DBMS</option>
+            <option value="typescript">TypeScript</option>
+        </select>
+      </label>
+      <br>
+      <label for="gender"
+        >Gender :
+        <label for="male">Male</label>
+        <input type="radio" name="male" id="male" />
+        <label for="female">Female</label>
+        <input type="radio" name="female" id="female" />
+      </label><br>
+<label for="">I agree
+    <input type="checkbox" name="" id="">
+</label>
+<br>
+<label for="">File : 
+    <input type="file" name="file" id="file">
+</label>
+<br>
+<label for="">Feedback :
+    <input type="range" name="" id="">
+</label>
+
+    </form>
+  </body>
 </html>
