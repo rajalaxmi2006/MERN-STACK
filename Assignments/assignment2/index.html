@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+  </head>
+  <body>
+    <h1>Student Registration Form</h1>
+
+    <form action="./success.html">
+      <label for="name">
+        Name :
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter Your Name"
+          required
+        />
+      </label>
+
+      <br /><br />
+
+      <label for="email">
+        Email :
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter Your Email"
+          required
+        />
+      </label>
+
+      <br /><br />
+
+      <label for="password">
+        Password :
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter Your Password"
+          required
+        />
+      </label>
+
+      <br /><br />
+
+      <label for="mobile">
+        Mobile Number :
+        <input
+          type="tel"
+          id="mobile"
+          name="mobile"
+          placeholder="Enter Your Mobile Number"
+        />
+      </label>
+
+      <br /><br />
+
+      <label for="dob">
+        Date of Birth :
+        <input type="date" id="dob" name="dob" />
+      </label>
+
+      <br /><br />
+
+      Gender :
+      <label for="male">Male</label>
+      <input type="radio" id="male" name="gender" value="Male" />
+
+      <label for="female">Female</label>
+      <input type="radio" id="female" name="gender" value="Female" />
+
+      <label for="other">Other</label>
+      <input type="radio" id="other" name="gender" value="Other" />
+
+      <br /><br />
+
+      Skills :
+      <label for="html">HTML</label>
+      <input type="checkbox" id="html" name="skills" value="HTML" />
+
+      <label for="css">CSS</label>
+      <input type="checkbox" id="css" name="skills" value="CSS" />
+
+      <label for="js">JavaScript</label>
+      <input type="checkbox" id="js" name="skills" value="JavaScript" />
+
+      <br /><br />
+
+      <label for="course">
+        Course :
+        <select id="course" name="course">
+          <option value="">Select Course</option>
+          <option value="mern">MERN Stack</option>
+          <option value="java">Java Full Stack</option>
+          <option value="python">Python Full Stack</option>
+          <option value="aiml">AI/ML</option>
+        </select>
+      </label>
+
+      <br /><br />
+
+      <label for="address"> Address : </label>
+      <br />
+      <textarea
+        id="address"
+        name="address"
+        rows="4"
+        cols="30"
+        placeholder="Enter Your Address"
+      ></textarea>
+
+      <br /><br />
+
+      <label for="resume">
+        Resume Upload :
+        <input type="file" id="resume" name="resume" />
+      </label>
+
+      <br /><br />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
