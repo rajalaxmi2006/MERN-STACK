@@ -1,12 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>02-selectors</title>
-</head>
-<body>
-    <h1>Selectors in CSS</h1>
-    
-</body>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      color: maroon;
+    }
+
+    h1 {
+      color: burlywood;
+    }
+
+    p {
+      color: salmon;
+    }
+
+    .heading {
+      background: #212121;
+    }
+
+    #first-div {
+      background-color: olive;
+    }
+
+    input[type="text"] {
+      background-color: coral;
+      color: black;
+      border: none;
+      outline: none;
+    }
+
+    input[type="password"] {
+      background-color: coral;
+      color: black;
+      border: none;
+      outline: none;
+    }
+
+    #first-div p {
+      background: #000;
+      color: white;
+      border: 2px solid;
+    }
+
+    #first-div > p {
+      background-color: coral;
+      color: white;
+    }
+
+    #first-div > p + p {
+      background-color: coral;
+      color: white;
+    }
+    #second-div > h3 + p {
+      background-color: darkcyan;
+      color: white;
+    }
+
+    button {
+      background-color: brown;
+      color: aliceblue;
+    }
+
+    button:hover {
+      background-color: chocolate;
+      cursor: pointer;
+    }
+
+    button:active {
+      background-color: goldenrod;
+    }
+
+    h1::first-letter{
+        font-size: 32px;
+        color: white;
+        font-weight: bold;
+    }
+  </style>
+
+  <body>
+    <h1 class="heading">Selectors in CSS</h1>
+
+    <div id="first-div">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis
+        ea cumque incidunt ipsam perspiciatis alias tenetur nam maxime
+        doloribus.
+      </p>
+      <p>I'm a p tag</p>
+      <div>
+        <p>Not the direct child!</p>
+      </div>
+    </div>
+    <h2 class="heading">Lorem ipsum dolor sit amet..</h2>
+    <hr />
+    <div class="second-div">
+      <h3 class="heading">H3 tag</h3>
+      <p>Para tag</p>
+      <p>Para tag 2</p>
+    </div>
+    <hr />
+
+    <div>
+      <input type="text" placeholder="Enter name" />
+      <input type="password" placeholder="Enter password" />
+    </div>
+    <button>Hover me</button>
+  </body>
 </html>
