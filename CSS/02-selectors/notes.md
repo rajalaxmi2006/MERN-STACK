@@ -53,15 +53,15 @@
       <div>
     ```
 
-    - Only direct child
+    - Only direct child(div>p)
 
-    8. adjucent sibling selectorss(+)
-    - select the first sibling
+    8. Adjucent sibling selectorss(+)
+    - Select the first sibling
 
-    9. general sibling selector (~)
-    - select all the sibling elements
+    9. General sibling selector (~)
+    - Select all the sibling elements
 
-    10. Pseudp-class selector 
+    10. Pseudo-class selector 
     ```js
         //a:hover
         //a:focus
@@ -72,7 +72,7 @@
     ```
 
 
-    11. Pseudp-element selector 
+    11. Pseudo-element selector 
     ```js
         //a::before
         //a::after
